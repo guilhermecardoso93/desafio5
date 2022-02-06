@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #000000;
+    --bg-card: #0E1218;
+    --text: #F1F1F1;
+    --img-profile: #8257e5;
+    --buttons: #FFF;
+    --border-button: #1A1A1A;
+}
+
+body {
+    background-color: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+
+.invate {
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+main h2 {
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    width: 439px;
+    height: 650px;
+    margin-bottom: 2rem;
+    background-color: var(--bg);
+    border-radius: 35px;
+}
+
+.card-main {
+    background-color: var(--bg-card);
+    border-radius: 35px;
+    width: 407px;
+    margin-top: 2rem;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    border-radius: 35px;
+    border: 1px solid var(--text);
+}
+
+#logo:hover {
+    padding: 0.3rem;
+    border: 2px double var(--text);
+}
+
+.card-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+
+.card-title h1 {
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: var(--text);
+}
+
+.card-title h1:hover {
+    color: #8257e5;
+}
+
+.infos-image {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-left: 6.69rem;
+    width: 300px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 8px solid var(--img-profile);
+    width: 350px;
+    height: 350px;
+    transition: 0.4s;
+}
+
+.color-change-2x {
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+    animation: color-change-2x 2s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+    0% {
+        background: #6c0bdb;
+    }
+    100% {
+        background: #51077c;
+    }
+}
+
+@keyframes color-change-2x {
+    0% {
+        background: #2c0cb8;
+    }
+    100% {
+        background: #430666;
+    }
+}
+
+.profile-image:hover {
+    border: 8px double #f1eeee;
+}
+
+.infos-github {
+    display: flex;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    margin-top: -9rem;
+    margin-right: 11rem;
+    width: 180.5px;
+    height: 180.7px;
+    background: linear-gradient(180deg, #000000 3.65%, rgba(70, 69, 69, 0.72) 53.65%, rgba(62, 56, 56, 0.42) 100%);
+    border-radius: 45px;
+}
+
+
+/*
+.color-change {
+    -webkit-animation: color-change 8s linear infinite both;
+    animation: color-change 8s linear infinite both;
+}
+
+@-webkit-keyframes color-change {
+    0% {
+        background: linear-gradient(180deg, #000000 3.65%, #464545b8 53.65%, #3e38386b 100%)
+    }
+    100% {
+        background: linear-gradient(180deg, #3e38386b 53, 65%, #464545b8 100%, #000000 3.65%);
+    }
+}
+
+@keyframes color-change {
+    0% {
+        background: linear-gradient(180deg, #000000 3.65%, #464545b8 53.65%, #3e38386b 100%);
+    }
+    100% {
+        background: linear-gradient(180deg, #000000 3.65%, hsla(0, 1%, 27%, 0.72) 53.65%, rgba(62, 56, 56, 0.42) 100%);
+    }
+}*/
+
+.infos-github ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: auto auto;
+    text-decoration: none;
+    list-style: none;
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text);
+}
+
+.infos-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 13rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text);
+}
+
+#logo-footer {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+}
