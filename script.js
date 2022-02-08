@@ -17,3 +17,7 @@ function githbInfos() {
 }
 
 githbInfos()
+
+function changeColor() {
+
+}
