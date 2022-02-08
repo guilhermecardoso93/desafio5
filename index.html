@@ -12,63 +12,77 @@
 <body>
 
     <main>
-        <div class="invate">
-            <h2>
-                Compartilhe seu #rocketcard
-            </h2>
-        </div>
-        <div class="card">
-            <div class="card-main">
-                <div class="card-title">
-                    <img src="./assets/logo.svg" id="logo" alt="logo">
-                    <h1>guilhermecardoso93</h1>
-                </div>
-                <div class="card-infos">
-                    <div class="infos-image">
-                        <img src="https://github.com/guilhermecardoso93.png" alt="profile-image" class="profile-image color-change-2x" />
+
+        <div>
+            <div class="invate">
+                <h2>
+                    Compartilhe seu #rocketcard
+                </h2>
+            </div>
+            <div class="card">
+
+
+                <div class="card-main">
+                    <div class="card-title">
+                        <img src="./assets/logo.svg" id="logo" alt="logo">
+                        <h1 id="userName"></h1>
                     </div>
-                    <div class="infos-github color-change">
-                        <ul>
-                            <li>
-                                <img src="./assets/followers.svg" alt="seguidores" />
-                                <span>
-                  716 seguidores
-                </span>
-                            </li>
-                            <li>
-                                <img src="./assets/following.svg" alt="seguindo" />
-                                <span>
-                  193 seguindo
-                </span>
-                            </li>
-                            <li>
-                                <img src="./assets/repository.svg" alt="repositorios" />
-                                <span>
-                  38 Repositórios
-                </span>
-                            </li>
-                            <li>
-                                <img src="./assets/company.svg" alt="compania" />
-                                <span>
-                  @Rocketseat
-                </span>
-                            </li>
-                            <li>
-                                <img src="./assets/location.svg" alt="locazlização" />
-                                <span>
-                  Cabo Frio
-                </span>
-                            </li>
-                        </ul>
+                    <div class="login">
+                        <a href="http://" id="loginGit" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/github.svg" id="gitlogo" alt="gitlogo">
+                            <span class="login" id="login"></span>
+                        </a>
                     </div>
-                    <div class="infos-footer">
-                        <img src="./assets/logo.svg" id="logo-footer" alt="logo"> ROCKETCARD
+                    <div class="card-infos">
+                        <div class="infos-image">
+                            <img src="" id="avatarUrl" alt="profile-image" class="profile-image color-change-2x" />
+                        </div>
+                        <div class="infos-github color-change">
+                            <ul>
+                                <li>
+                                    <img src="./assets/followers.svg" alt="seguidores" />
+                                    <span id="followers">
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="./assets/following.svg" alt="seguindo" />
+                                    <span id="following">
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="./assets/repository.svg" alt="repositorios" />
+                                    <span id="projetos">
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="./assets/twitter.svg" alt="twitter" />
+                                    <span id="twitter">
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="./assets/location.svg" alt="locazlização" />
+                                    <span id="city">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="infos-footer">
+                            <img src="./assets/logo.svg" id="logo-footer" alt="logo"> ROCKETCARD
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="costumazer"></div>
+        <div class="costumazer">
+            <h2>
+                Costomizar o Rocketcard
+            </h2>
+            <button id="button-change" onclick="changeColor()">
+                Gerar Novo Estilo
+            </button>
+        </div>
     </main>
 </body>
+<script src="./script.js"></script>
 
 </html>
